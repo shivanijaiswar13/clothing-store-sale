@@ -1,3 +1,8 @@
+/* color */
+/* #4C585B */
+/* #7E99A3 */
+/* #A5BFCC3t */
+
 *{
     margin: 0;
     padding: 0;
@@ -18,11 +23,11 @@ body{
 .main{
     width: 50vw;
     height: 100vh;
-    background-color: url(bg.jpg);
+    background: url(bg.jpg);
     background-size: cover;
     background-position: center;
-    box-shadow: 10px 10px 8px #080808;
     padding: 10px;
+    box-shadow: 0px 0px 15px 2px black;
     overflow: hidden;
     border: 1px solid #999;
 
@@ -32,7 +37,7 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 
 }
 .part1{
@@ -40,6 +45,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    line-height: 15px;
+}
+.part1 .icon i{
+    color:#AF1740;
+    padding: 2px;
+    font-size: 20px;
+    transition: .3s all;
+}
+.part1 .icon i:hover{
+    color: #CC2B52;
+    text-shadow: 0px 0px 15px 2px black;
+    font-size: 25px;
 }
 .part1 .logo img{
     width: 100px;
@@ -48,7 +65,7 @@ body{
 .part2 h1{
     /* color: blueviolet; */
     font-size: 50px;
-    background: linear-gradient(#a15353 50%,#320975 50%,#f15d22 );
+    background: linear-gradient(#a15353 50%,#CC2B52 50%,#AF1740 );
     -webkit-background-clip : text;
     color: transparent;
     text-align: center;
@@ -57,6 +74,15 @@ body{
     font-size: 40px;
     text-align: center;
     
+}
+.part2 button{
+    padding: 8px;
+    margin-left: 35%;
+    border-radius: 64px 48px 16px 96px;
+    background: linear-gradient(#AF1740,#CC2B52,#a15353);
+    font-weight: bold;
+    color: #fff;
+
 }
 .part4{
     width: 100%;
@@ -77,6 +103,7 @@ body{
 .part3 img{
     width: 180px;
     border-radius: 50% 80% / 70% 10%;
+    border: 2px solid #F4EDD3;
 }
 .part4 .web{
     display: flex;
@@ -92,6 +119,7 @@ body{
 }
 .part4 .web i{
     font-size: 30px;
+    color: #AF1740;
 }
 .part4 .number{
     display: flex;
@@ -106,4 +134,12 @@ body{
 }
 .number i{
     font-size: 28px;
+    color: #AF1740;
+}
+.part4 .btn{
+    background-color: #AF1740;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
 }
